@@ -150,9 +150,9 @@ details.card{padding:20px}
 }
 /* ---- v3 additions ---- */
 [hidden]{display:none!important}
-h1,.h2,.price,.stat b{font-family:'Abril Fatface',Georgia,serif;font-weight:400}
-.hero h1{letter-spacing:-.01em;line-height:1.05}
-.h2{letter-spacing:-.005em;line-height:1.12}
+h1,.h2,.price,.stat b{font-family:inherit;font-weight:800}
+.hero h1{letter-spacing:-.035em;line-height:1.02}
+.h2{letter-spacing:-.025em;line-height:1.1}
 .eyebrow::before{content:"";display:inline-block;width:26px;height:1px;background:#FFC4D4;vertical-align:middle;margin-right:12px}
 .foot-col .eyebrow::before,.legend::before{display:none}
 .hero{position:relative}
@@ -204,5 +204,11 @@ h1,.h2,.price,.stat b{font-family:'Abril Fatface',Georgia,serif;font-weight:400}
 
 .brandlink{display:flex;align-items:center;gap:12px}
 .logo{height:56px;width:auto}
-.brand{font-family:'Abril Fatface',Georgia,serif;font-size:22px;line-height:1;color:#F2F2F3;white-space:nowrap}
+.brand{font-family:inherit;font-weight:800;font-size:22px;line-height:1;color:#F2F2F3;white-space:nowrap}
 @media (max-width:760px){.logo{height:44px}.brand{font-size:19px}}
+
+.logo-word{height:50px;width:auto;display:block}
+@media (max-width:760px){.logo-word{height:38px}.brandlink{gap:8px}}
+
+.logo{height:64px}
+@media (max-width:760px){.logo{height:50px}}
